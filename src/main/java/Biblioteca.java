@@ -28,19 +28,16 @@ public class Biblioteca {
      * Constructor de Biblioteca con parámetros.
      * @param libros Lista de libros con los que inicializar la biblioteca.
      */
-    //  Test: NO HAY QUE TESTEAR ESTE METODO
     public Biblioteca(List<Libro> libros) {
         this.libros = libros;
     }
 
-    // TODO: Testear este metodo.
-    //  Test: Comprobar si se ha agregado
+
     public boolean agregarLibro(Libro libro) {
         return libros.add(libro);
     }
 
-    // TODO: Testear este metodo.
-    //  Test: comprobar si se ha eliminado
+
     public boolean eliminarLibro(Libro libro) {
         return libros.remove(libro);
     }
@@ -61,8 +58,7 @@ public class Biblioteca {
      * @return Objeto libro que coincida con la búsqueda
      * o {@code null} si no se encuentra un libro con el título solicitado.
      */
-    //  Test 01: buscar libro existente y comprobar que lo localiza.
-    //  Test 02: buscar libro NO existente y comprobar que no lo localiza.
+
     public Libro encuentraLibroPorTitulo(String titulo) {
         for (Libro libro : libros) {
             if (libro.getTitulo().equals(titulo)) {
